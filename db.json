@@ -1,0 +1,204 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Headphones",
+      "price": 89.99,
+      "quantity": 120,
+      "rate": 4.5,
+      "image": "https://shopdunk.com/images/thumbs/0001108_beats-studio-3-wireless-headphones.jpeg",
+      "category": "Electronics",
+      "description": "Comfortable wireless headphones with noise cancellation."
+    },
+    {
+      "id": 2,
+      "name": "Classic Wristwatch",
+      "price": 150.0,
+      "quantity": 60,
+      "rate": 4.7,
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+      "category": "Accessories",
+      "description": "Stylish wristwatch with leather strap."
+    },
+    {
+      "id": 3,
+      "name": "Gaming Laptop",
+      "price": 1299.99,
+      "quantity": 30,
+      "rate": 4.8,
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
+      "category": "Computers",
+      "description": "High-performance laptop suitable for gaming and work."
+    },
+    {
+      "id": 4,
+      "name": "Running Shoes",
+      "price": 69.99,
+      "quantity": 200,
+      "rate": 4.3,
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+      "category": "Fashion",
+      "description": "Lightweight and durable shoes for running."
+    },
+    {
+      "id": 5,
+      "name": "Smartphone 12 Pro",
+      "price": 999.0,
+      "quantity": 50,
+      "rate": 4.9,
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+      "category": "Electronics",
+      "description": "Latest smartphone with high-resolution camera."
+    },
+    {
+      "id": 6,
+      "name": "Leather Backpack",
+      "price": 120.0,
+      "quantity": 80,
+      "rate": 4.6,
+      "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa",
+      "category": "Bags",
+      "description": "Stylish and durable leather backpack for travel and work."
+    },
+    {
+      "id": 7,
+      "name": "Mechanical Keyboard",
+      "price": 79.99,
+      "quantity": 90,
+      "rate": 4.4,
+      "image": "https://images.unsplash.com/photo-1595225476474-87563907a212",
+      "category": "Electronics",
+      "description": "RGB backlit mechanical keyboard for typing and gaming."
+    },
+    {
+      "id": 8,
+      "name": "Ceramic Mug Set",
+      "price": 25.0,
+      "quantity": 150,
+      "rate": 4.2,
+      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
+      "category": "Home",
+      "description": "Elegant ceramic mugs perfect for coffee and tea."
+    },
+    {
+      "id": 9,
+      "name": "4K Monitor 27\"",
+      "price": 299.99,
+      "quantity": 40,
+      "rate": 4.6,
+      "image": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04",
+      "category": "Computers",
+      "description": "High-resolution 4K monitor with vibrant colors."
+    },
+    {
+      "id": 10,
+      "name": "Portable Bluetooth Speaker",
+      "price": 59.99,
+      "quantity": 140,
+      "rate": 4.5,
+      "image": "https://images.unsplash.com/photo-1583223667854-e2a1e5d84a41",
+      "category": "Electronics",
+      "description": "Compact speaker with excellent sound quality."
+    },
+    {
+      "id": 11,
+      "name": "Fitness Tracker",
+      "price": 49.99,
+      "quantity": 110,
+      "rate": 4.1,
+      "image": "https://images.unsplash.com/photo-1519861531473-9200262188bf",
+      "category": "Health",
+      "description": "Track steps, heart rate, and sleep."
+    },
+    {
+      "id": 12,
+      "name": "Sunglasses UV400",
+      "price": 35.0,
+      "quantity": 95,
+      "rate": 4.3,
+      "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083",
+      "category": "Accessories",
+      "description": "Stylish sunglasses with UV protection."
+    },
+    {
+      "id": 13,
+      "name": "Stainless Steel Water Bottle",
+      "price": 18.0,
+      "quantity": 180,
+      "rate": 4.7,
+      "image": "https://images.unsplash.com/photo-1526401485004-2aa7f3c6a3c9",
+      "category": "Fitness",
+      "description": "Keeps water cold up to 24 hours."
+    },
+    {
+      "id": 14,
+      "name": "Electric Toothbrush",
+      "price": 39.99,
+      "quantity": 130,
+      "rate": 4.4,
+      "image": "https://images.unsplash.com/photo-1588776814546-1ffcf47267b0",
+      "category": "Health",
+      "description": "Rechargeable toothbrush with multiple modes."
+    },
+    {
+      "id": 15,
+      "name": "LED Desk Lamp",
+      "price": 29.99,
+      "quantity": 75,
+      "rate": 4.2,
+      "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c",
+      "category": "Home",
+      "description": "Touch control desk lamp with brightness adjustment."
+    },
+    {
+      "id": 16,
+      "name": "Instant Coffee Pack",
+      "price": 15.99,
+      "quantity": 200,
+      "rate": 4.0,
+      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
+      "category": "Groceries",
+      "description": "Premium instant coffee with rich flavor."
+    },
+    {
+      "id": 17,
+      "name": "Yoga Mat",
+      "price": 25.0,
+      "quantity": 100,
+      "rate": 4.6,
+      "image": "https://images.unsplash.com/photo-1600180758890-6e1e96f9f519",
+      "category": "Fitness",
+      "description": "Non-slip mat suitable for yoga and exercise."
+    },
+    {
+      "id": 18,
+      "name": "HD Webcam",
+      "price": 45.0,
+      "quantity": 70,
+      "rate": 4.4,
+      "image": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04",
+      "category": "Computers",
+      "description": "1080p HD webcam for meetings and streaming."
+    },
+    {
+      "id": 19,
+      "name": "Tabletop Tripod",
+      "price": 19.99,
+      "quantity": 120,
+      "rate": 4.3,
+      "image": "https://images.unsplash.com/photo-1519183071298-a2962eadcdb2",
+      "category": "Photography",
+      "description": "Mini tripod for phone and camera."
+    },
+    {
+      "id": 20,
+      "name": "Bluetooth Mouse",
+      "price": 22.0,
+      "quantity": 160,
+      "rate": 4.5,
+      "image": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3",
+      "category": "Computers",
+      "description": "Ergonomic wireless mouse with Bluetooth."
+    }
+  ]
+}
