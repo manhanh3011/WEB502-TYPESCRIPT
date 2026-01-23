@@ -55,7 +55,7 @@
       "name": "Leather Backpack",
       "price": 120.0,
       "quantity": 80,
-      "rate": 4.6,
+      "rate": 4.2,
       "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa",
       "category": "Bags",
       "description": "Stylish and durable leather backpack for travel and work."
@@ -125,8 +125,8 @@
       "name": "Stainless Steel Water Bottle",
       "price": 18.0,
       "quantity": 180,
-      "rate": 4.7,
-      "image": "https://images.unsplash.com/photo-1526401485004-2aa7f3c6a3c9",
+      "rate": 4.6,
+      "image": "https://www.dillerbottle.com/wp-content/uploads/2024/09/vacuum-stainless-steel-water-bottle41183472095.jpg",
       "category": "Fitness",
       "description": "Keeps water cold up to 24 hours."
     },
@@ -165,7 +165,7 @@
       "name": "Yoga Mat",
       "price": 25.0,
       "quantity": 100,
-      "rate": 4.6,
+      "rate": 4.5,
       "image": "https://images.unsplash.com/photo-1600180758890-6e1e96f9f519",
       "category": "Fitness",
       "description": "Non-slip mat suitable for yoga and exercise."
@@ -195,7 +195,7 @@
       "name": "Bluetooth Mouse",
       "price": 22.0,
       "quantity": 160,
-      "rate": 4.5,
+      "rate": 4.1,
       "image": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3",
       "category": "Computers",
       "description": "Ergonomic wireless mouse with Bluetooth."
