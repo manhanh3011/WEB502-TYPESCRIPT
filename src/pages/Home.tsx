@@ -1,6 +1,7 @@
 import type { IProduct } from '../interfaces/Product';
 import axios from 'axios';
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 
 function Home() {
@@ -9,7 +10,7 @@ function Home() {
   useEffect(() => {
     const getAllProducts = async () => {
       try {
-        const {data} = await axios.get("http://localhost:3000/products");
+        const {data} = await axios.get("http://localhost:3001/products");
         if(data) setProducts(data);
       } catch (error) {
         console.log(error)
@@ -18,9 +19,9 @@ function Home() {
     getAllProducts();
   }, [])
 
-  const topRateProducts = products.slice().sort((a, b) => b.rate - a.rate).slice(0, 4);
-  const topPriceProducts = products.slice().sort((a, b) => b.price - a.price).slice(0, 4);
-  const lowQuantityProducts = products.slice().sort((a, b) => a.quantity - b.quantity).slice(0, 4);                        
+  const topRateProducts = products.slice().sort((r1, r2) => r2.rate - r1.rate).slice(0, 4);
+  const topPriceProducts = products.slice().sort((p1, p2) => p2.price - p1.price).slice(0, 4);
+  const lowQuantityProducts = products.slice().sort((q1, q2) => q1.quantity - q2.quantity).slice(0, 4);                        
 
   return (
     <div>
@@ -33,13 +34,21 @@ function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {/* Card */}
             {topRateProducts && topRateProducts.map((product) => (
-               <div key={product.id} className="bg-white rounded-xl shadow hover:shadow-lg transition">
+              <div key={product.id} className="bg-white rounded-xl shadow hover:shadow-lg transition">
               <img src={product.image} alt={product.name} className="rounded-t-xl w-full h-48 object-cover" />
               <div className="p-4">
                 <h3 className="font-semibold text-lg"> {product.name} </h3>
                 <p className="text-sm text-gray-500">⭐⭐⭐⭐⭐ {product.rate} / (5.0)</p>
-                <p className="text-green-600 font-bold mt-2"> {product.price} </p>
+                <div className="flex items-center justify-between mt-3">
+                  <span className="text-green-600 font-bold text-lg">
+                    {product.price}
+                  </span>
+                  <Link to={`/product/${product.id}`} className="px-3 py-1.5 text-sm bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
+                    Xem chi tiết
+                  </Link>
+                </div>
               </div>
+              
             </div>
             ))}
           </div>
@@ -56,7 +65,14 @@ function Home() {
               <div className="p-4">
                 <h3 className="font-semibold text-lg"> {product.name} </h3>
                 <p className="text-gray-500 text-sm">Danh mục: {product.category} </p>
-                <p className="text-red-600 font-bold mt-2"> {product.price} </p>
+                <div className="flex items-center justify-between mt-3">
+                  <span className="text-red-600 font-bold text-lg">
+                    {product.price}
+                  </span>
+                  <Link to={`/product/${product.id}`} className="px-3 py-1.5 text-sm bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
+                    Xem chi tiết
+                  </Link>
+                </div>
               </div>
             </div>
             ))}  
@@ -74,7 +90,14 @@ function Home() {
               <div className="p-4">
                 <h3 className="font-semibold text-lg">{p.name}</h3>
                 <p className="text-sm text-gray-500">Còn lại: {p.quantity} sản phẩm</p>
-                <p className="text-orange-600 font-bold mt-2">{p.price} </p>
+                <div className="flex items-center justify-between mt-3">
+                  <span className="text-red-600 font-bold text-lg">
+                    {p.price}
+                  </span>
+                  <Link to={`/product/${p.id}`} className="px-3 py-1.5 text-sm bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
+                    Xem chi tiết
+                  </Link>
+                </div>
               </div>
             </div>
             ))}

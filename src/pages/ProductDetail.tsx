@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import type { IProduct } from "../interfaces/Product";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 
 function ProductDetail() {
@@ -12,7 +12,7 @@ function ProductDetail() {
         const getDetailProduct = async() => {
             try {
                 if(!id) return;
-                const {data} = await axios.get(`http://localhost:3000/products/${id}`);
+                const {data} = await axios.get(`http://localhost:3001/products/${id}`);
                 if(data) setProduct(data);
             } catch (error) {
                 console.log(error);
@@ -26,8 +26,8 @@ function ProductDetail() {
           <main className="max-w-7xl mx-auto px-6 py-10">
               {/* Breadcrumb (tuỳ chọn) */}
               <nav className="text-sm text-gray-500 mb-6">
-                  <a href="#" className="hover:text-green-600">Trang chủ</a> /
-                  <a href="#" className="hover:text-green-600">Sản phẩm</a> /
+                  <Link to="/" className="hover:text-green-600">Trang chủ</Link> /
+                  <Link to={'/product'} className="hover:text-green-600">Sản phẩm</Link> /
                   <span className="text-gray-700">Chi tiết</span>
               </nav>
               {/* Nội dung chính */}
