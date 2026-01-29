@@ -2,11 +2,12 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import type { IProduct } from "../../../interfaces/Product";
 import { Link } from "react-router-dom";
+import toast from "react-hot-toast";
 
 
 function List() {
     const [products, setProducts] = useState<IProduct[]>([]);
-
+    
     useEffect(() => {
         const getAll = async () => {
             try {
@@ -19,13 +20,34 @@ function List() {
         getAll();
     }, [])
 
-    const handleDelete = async () => {
+    const handleDelete = async (id: string) => {
+        try {
+            if(!id){
+                return
+            }
 
+            if(window.confirm("Bạn có chắc chắn muốn xoá không?")){
+                await axios.delete(`http://localhost:3001/products/${id}`);
+                setProducts((pre) => {
+                    return pre.filter((item: IProduct) => item.id != id)
+                });
+            }
+            toast.success("Xoá thành công")
+        } catch (error) {
+            console.log(error);
+            
+        }
     }
 
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-semibold mb-4">Danh sách sản phẩm</h1>
+        <div className="flex justify-between">
+            <h1 className="text-2xl font-semibold mb-4">Danh sách sản phẩm</h1>
+            <Link to={"/admin/add"} className="text-2xl font-semibold mb-6 text-gray-700">
+                 ➕ Thêm mới sản phẩm
+            </Link>
+        </div>
+      
 
       <div className="overflow-x-auto bg-white rounded-lg shadow">
         <table className="min-w-full border border-gray-200">
@@ -64,10 +86,10 @@ function List() {
                         <Link to={`/admin/detail/${item.id}`} className="px-3 py-1 text-sm bg-blue-500 text-white rounded hover:bg-blue-600">
                             Chi tiết
                         </Link>
-                        <button className="px-3 py-1 text-sm bg-green-500 text-white rounded hover:bg-green-600">
+                        <Link to={`/admin/edit/${item.id}`} className="px-3 py-1 text-sm bg-green-500 text-white rounded hover:bg-green-600">
                             Sửa
-                        </button>
-                        <button onClick={() => {handleDelete()}} className="px-3 py-1 text-sm bg-red-500 text-white rounded hover:bg-red-600">
+                        </Link>
+                        <button onClick={() => {handleDelete(item.id)}} className="px-3 py-1 text-sm bg-red-500 text-white rounded hover:bg-red-600">
                             Xóa
                         </button>
                     </div>

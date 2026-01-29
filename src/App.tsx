@@ -10,6 +10,8 @@ import ProductDetail from "./pages/ProductDetail";
 import AdminLayout from "./layouts/AdminLayout";
 import List from "./pages/admin/product/List";
 import Detail from "./pages/admin/product/Detail";
+import Add from "./pages/admin/product/Add";
+import { Toaster } from "react-hot-toast";
 
 
 function App() {
@@ -28,9 +30,11 @@ function App() {
         </Route>
         <Route path="/admin" element={<AdminLayout/>}>
           <Route path="list" element={<List/>} />
+          <Route path="add" element={<Add/>} />
           <Route path="detail/:id" element={<Detail/>} />
         </Route>
       </Routes>
+      <Toaster/>
     </>
   )
 }

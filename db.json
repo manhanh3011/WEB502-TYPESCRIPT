@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Wireless Headphones",
       "price": 89.99,
       "quantity": 120,
@@ -11,9 +11,9 @@
       "description": "Comfortable wireless headphones with noise cancellation."
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Classic Wristwatch",
-      "price": 150.0,
+      "price": 150,
       "quantity": 60,
       "rate": 4.7,
       "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
@@ -21,7 +21,7 @@
       "description": "Stylish wristwatch with leather strap."
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Gaming Laptop",
       "price": 1299.99,
       "quantity": 30,
@@ -31,7 +31,7 @@
       "description": "High-performance laptop suitable for gaming and work."
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Running Shoes",
       "price": 69.99,
       "quantity": 200,
@@ -41,9 +41,9 @@
       "description": "Lightweight and durable shoes for running."
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Smartphone 12 Pro",
-      "price": 999.0,
+      "price": 999,
       "quantity": 50,
       "rate": 4.9,
       "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
@@ -51,9 +51,9 @@
       "description": "Latest smartphone with high-resolution camera."
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Leather Backpack",
-      "price": 120.0,
+      "price": 120,
       "quantity": 80,
       "rate": 4.2,
       "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa",
@@ -61,7 +61,7 @@
       "description": "Stylish and durable leather backpack for travel and work."
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Mechanical Keyboard",
       "price": 79.99,
       "quantity": 90,
@@ -71,9 +71,9 @@
       "description": "RGB backlit mechanical keyboard for typing and gaming."
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Ceramic Mug Set",
-      "price": 25.0,
+      "price": 25,
       "quantity": 150,
       "rate": 4.2,
       "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
@@ -81,7 +81,7 @@
       "description": "Elegant ceramic mugs perfect for coffee and tea."
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "4K Monitor 27\"",
       "price": 299.99,
       "quantity": 40,
@@ -91,7 +91,7 @@
       "description": "High-resolution 4K monitor with vibrant colors."
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Portable Bluetooth Speaker",
       "price": 59.99,
       "quantity": 140,
@@ -101,7 +101,7 @@
       "description": "Compact speaker with excellent sound quality."
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Fitness Tracker",
       "price": 49.99,
       "quantity": 110,
@@ -111,9 +111,9 @@
       "description": "Track steps, heart rate, and sleep."
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Sunglasses UV400",
-      "price": 35.0,
+      "price": 35,
       "quantity": 95,
       "rate": 4.3,
       "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083",
@@ -121,9 +121,9 @@
       "description": "Stylish sunglasses with UV protection."
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Stainless Steel Water Bottle",
-      "price": 18.0,
+      "price": 18,
       "quantity": 180,
       "rate": 4.6,
       "image": "https://www.dillerbottle.com/wp-content/uploads/2024/09/vacuum-stainless-steel-water-bottle41183472095.jpg",
@@ -131,7 +131,7 @@
       "description": "Keeps water cold up to 24 hours."
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Electric Toothbrush",
       "price": 39.99,
       "quantity": 130,
@@ -141,7 +141,7 @@
       "description": "Rechargeable toothbrush with multiple modes."
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "LED Desk Lamp",
       "price": 29.99,
       "quantity": 75,
@@ -151,29 +151,19 @@
       "description": "Touch control desk lamp with brightness adjustment."
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Instant Coffee Pack",
       "price": 15.99,
       "quantity": 200,
-      "rate": 4.0,
+      "rate": 4,
       "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
       "category": "Groceries",
       "description": "Premium instant coffee with rich flavor."
     },
     {
-      "id": 17,
-      "name": "Yoga Mat",
-      "price": 25.0,
-      "quantity": 100,
-      "rate": 4.5,
-      "image": "https://images.unsplash.com/photo-1600180758890-6e1e96f9f519",
-      "category": "Fitness",
-      "description": "Non-slip mat suitable for yoga and exercise."
-    },
-    {
-      "id": 18,
+      "id": "18",
       "name": "HD Webcam",
-      "price": 45.0,
+      "price": 45,
       "quantity": 70,
       "rate": 4.4,
       "image": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04",
@@ -181,24 +171,23 @@
       "description": "1080p HD webcam for meetings and streaming."
     },
     {
-      "id": 19,
-      "name": "Tabletop Tripod",
-      "price": 19.99,
-      "quantity": 120,
-      "rate": 4.3,
-      "image": "https://images.unsplash.com/photo-1519183071298-a2962eadcdb2",
-      "category": "Photography",
-      "description": "Mini tripod for phone and camera."
-    },
-    {
-      "id": 20,
+      "id": "20",
       "name": "Bluetooth Mouse",
-      "price": 22.0,
+      "price": 22,
       "quantity": 160,
       "rate": 4.1,
       "image": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3",
       "category": "Computers",
       "description": "Ergonomic wireless mouse with Bluetooth."
+    },
+    {
+      "id": "7c2a",
+      "name": "Sản phẩm vừa thêm",
+      "price": 1400,
+      "quantity": 0,
+      "category": "Gaming Laptop",
+      "image": "https://picsum.photos/400/300?random=3",
+      "description": ""
     }
   ]
 }
