@@ -7,6 +7,9 @@ import Product from "./pages/Product";
 import ClientLayout from "./layouts/ClientLayout";
 import Account from "./pages/Account";
 import ProductDetail from "./pages/ProductDetail";
+import AdminLayout from "./layouts/AdminLayout";
+import List from "./pages/admin/product/List";
+import Detail from "./pages/admin/product/Detail";
 
 
 function App() {
@@ -22,6 +25,10 @@ function App() {
           <Route path="product" element={<Product/>} />
           <Route path="account" element={<Account/>} />
           <Route path="product/:id" element={<ProductDetail/>} />
+        </Route>
+        <Route path="/admin" element={<AdminLayout/>}>
+          <Route path="list" element={<List/>} />
+          <Route path="detail/:id" element={<Detail/>} />
         </Route>
       </Routes>
     </>
