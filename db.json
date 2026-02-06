@@ -1,0 +1,33 @@
+{
+  "tasks": [
+    {
+      "title": "tasks 1 update",
+      "dueDate": "2026-02-08",
+      "priority": "low",
+      "status": false,
+      "id": 1
+    },
+    {
+      "title": "task2 update",
+      "dueDate": "2026-02-20",
+      "priority": "low",
+      "status": false,
+      "id": 2
+    },
+    {
+      "title": "task 4",
+      "dueDate": "2026-02-12",
+      "priority": "medium",
+      "status": false,
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$a7hb4VH.Jaytewy5kJLRW.3Ptsx/8mm377w6.PXa34VtLInGj85ga",
+      "name": "admin",
+      "id": 1
+    }
+  ]
+}
