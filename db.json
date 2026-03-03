@@ -1,0 +1,38 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "titleBook": "Clean Code",
+      "quantity": 10,
+      "publishedYear": 2008,
+      "isNew": false,
+      "image": "clean-code.jpg",
+      "category": "Programming"
+    },
+    {
+      "id": 3,
+      "titleBook": "Atomic Habits",
+      "quantity": 20,
+      "publishedYear": 2018,
+      "isNew": true,
+      "image": "atomic-habits.jpg",
+      "category": "Self-help"
+    },
+    {
+      "titleBook": "book1 update lần 1",
+      "quantity": "2",
+      "publishedYear": "2024",
+      "isNew": false,
+      "image": "https://picsum.photos/400/300?random=3",
+      "category": "Thiếu nhi",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$EyWt58vb5r.dbrf.QVLuX.M4nV7EL2Xo1eFkxog18DjM1z7sJlTIy",
+      "id": 1
+    }
+  ]
+}
